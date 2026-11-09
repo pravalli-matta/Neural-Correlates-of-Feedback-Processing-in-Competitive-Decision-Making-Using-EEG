@@ -1,81 +1,48 @@
 # Neural Correlates of Feedback Processing in Competitive Decision-Making Using EEG
 
-## 📋 Project Overview
+This project examined EEG responses to outcome feedback during a competitive Rock–Paper–Scissors task. The analysis focused on feedback following wins, losses, and draws, and was completed as part of the Human Brain Mapping course at IIT Gandhinagar (2026).
 
-This EEG study examines the neural correlates of feedback processing during competitive decision-making scenarios, investigating how the brain responds to wins, losses, and neutral outcomes in competitive contexts.
+## Research Focus
 
-## 🎯 Research Focus
+Feedback provides information about the outcome of an action. Event-related potentials (ERPs) make it possible to study how brain responses change over time following different outcomes.
 
-- **Feedback Processing**: How the brain processes different types of feedback (positive, negative, neutral)
-- **Competitive Decision-Making**: Neural mechanisms during competitive scenarios
-- **Event-Related Potentials (ERPs)**: EEG components associated with feedback processing
+The project examined feedback-locked neural responses across three outcome conditions:
 
-## 🧠 Key Research Questions
+- Win
+- Loss
+- Draw
 
-1. How does the brain process feedback in competitive versus cooperative contexts?
-2. What ERP components are associated with different feedback types?
-3. How do individual differences influence neural responses to competitive feedback?
+## Data and Analysis
 
-## 🔬 Methodology
+The dataset included EEG recordings from 20 participants. The analysis was conducted using MNE-Python and involved:
 
-### EEG Recording
-- High-density EEG recording (64+ channels)
-- Time-locked to feedback stimuli
-- Analysis of event-related potentials
+1. Filtering and downsampling the EEG data.
+2. Selecting channels for analysis.
+3. Creating epochs time-locked to feedback events.
+4. Applying baseline correction.
+5. Identifying and rejecting artefact-contaminated epochs.
+6. Computing and visualising ERP waveforms for the feedback conditions.
+7. Examining feedback-related negativity (FRN) and P300 responses, including amplitude comparisons and scalp topographies.
+8. Using paired-samples t-tests for condition comparisons.
 
-### Experimental Paradigm
-- Competitive decision-making task
-- Win/Loss/Neutral feedback conditions
-- Behavioral response measurement
+## What the Analysis Can Address
 
-### ERP Components of Interest
-- **FRN (Feedback-Related Negativity)**: Error and negative feedback processing
-- **P300**: Attention and outcome evaluation
-- **LPP (Late Positive Potential)**: Emotional processing of feedback
+The ERP analysis allows feedback-locked responses to be compared across win, loss, and draw outcomes. FRN and P300 are considered in relation to feedback evaluation and the processing of outcome information.
 
-### Analysis Techniques
-- Time-domain ERP analysis
-- Time-frequency analysis
-- Source localization
-- Behavioral-ERP correlations
+These components are not unique markers of a single psychological process. Their interpretation depends on the task, time window, electrode selection, preprocessing decisions, and statistical analysis. The project therefore treats the observed ERP patterns as evidence about responses in this task, rather than as definitive measures of an individual's feedback sensitivity.
 
-## 🧩 Expected Findings
+## Report
 
-- Enhanced FRN for negative feedback (losses)
-- Larger P300 for salient outcomes (wins and losses vs. neutral)
-- Individual differences in feedback sensitivity
-- Context effects on neural processing
+[Read the project report (PDF)](NEURAL%20CORRELATES%20OF%20FEEDBACK%20PROCESSING%20IN%20COMPETITIVE%20DECISION-MAKING%20USING%20EEG.pdf)
 
-## 📄 Contents
+## Methods and Tools
 
-- `NEURAL CORRELATES OF FEEDBACK PROCESSING IN COMPETITIVE DECISION-MAKING USING EEG.pdf` - Full EEG research report
+EEG, MNE-Python, preprocessing, feedback-locked epoching, baseline correction, artefact rejection, ERP analysis, FRN, P300, scalp topographies, and paired-samples t-tests.
 
-## 📚 Keywords
+## Project Details
 
-EEG, Event-Related Potentials, Feedback processing, Competitive decision-making, FRN, P300, Social neuroscience, Cognitive neuroscience
-
-## 👤 Author
-
-Pravalli Matta
-
-## 📅 Course
-
-Cognitive Science - Human Brain Mapping
-
-## 📅 Year
-
-2026
-
-### Contributors
-This project was a collaborative effort. Key contributors include:
-- CORRELA TES
-
----
-
-## 👩‍🔬 About the Author
-
-**Pravalli Matta**  
-*B.Tech-MSc Dual Degree Student in Cognitive Science*  
-**Indian Institute of Technology (IIT) Gandhinagar**  
-*Research Focus: Decision-making, fMRI, EEG, Neural Correlates, and Cognitive Psychology.*
-
+- **Course:** Human Brain Mapping
+- **Institution:** IIT Gandhinagar
+- **Instructor:** Prof. Vaibhav Tripathi
+- **Year:** 2026
+- **Author:** Pravalli Matta
